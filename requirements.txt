@@ -1,0 +1,17 @@
+Django
+psycopg[binary]
+djangorestframework
+
+python-dotenv
+
+django-environ
+
+Pillow
+
+django-filter
+
+drf-spectacular
+
+gunicorn
+
+whitenoise
