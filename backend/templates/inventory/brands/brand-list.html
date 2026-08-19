@@ -1,16 +1,16 @@
-{% load static%}
+{% load static %}
 
 <!doctype html>
 
 <html lang="en">
     <!-- Theme Script JS -->
-    {% comment %} <script src="django/static/assets/js/theme-script.js" type="547bc1a52ba2ea0006698f97-text/javascript"></script> {% endcomment %}
+    {% comment %} <script src="django/static/assets/js/theme-script.js" type="4b50205babc33050fde1b6be-text/javascript"></script> {% endcomment %}
     <script src="{% static 'js/theme-script.js' %}"></script>
 
     <meta
         http-equiv="content-type"
         content="text/html;charset=utf-8"
-    />
+    /><!-- /Added by HTTrack -->
     <head>
         <!-- Meta Tags -->
         <meta charset="utf-8" />
@@ -68,19 +68,14 @@
         {% comment %} <link rel="stylesheet" href="django/static/assets/plugins/quill/quill.snow.css" /> {% endcomment %}
         <link rel="stylesheet" href="{% static 'plugins/quill/quill.snow.css' %}">
        
-        <!-- Daterangepikcer CSS -->
-        {% comment %} <link rel="stylesheet" href="django/static/assets/plugins/daterangepicker/daterangepicker.css" /> {% endcomment %}
-        <link rel="stylesheet" href="{% static 'plugins/daterangepicker/daterangepicker.css' %}">
-
         <!-- Main CSS -->
         {% comment %} <link rel="stylesheet" href="django/static/assets/css/style.css" /> {% endcomment %}
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
     </head>
 
     <body>
         <a
-            href="https://django.dreamstechnologies.com/cdn-cgi/content?id=ASJk2aZYiiP_uwUyWlCSQdCAVPVsLxp4Ad5ugGrsOz0-1780570821.4950705-1.2.1.1-SPmhREf445LeRg_LF2n5cHTCHM4Qpn2J71rXo9wnLsY"
+            href="https://django.dreamstechnologies.com/cdn-cgi/content?id=s8BxcPutDEo9vmMdYaQKQSNFeJSBx.STKJS2C0iiqQw-1780570832.37637-1.2.1.1-2LCTnwsSNhnEXeEJsFqikadjSOeJXUb4Rd7Px89siC8"
             aria-hidden="true"
             rel="nofollow noopener"
             style="display: none !important; visibility: hidden !important"
@@ -666,12 +661,12 @@
                                 <h6 class="submenu-hdr">Main</h6>
                                 <ul>
                                     <li class="submenu">
-                                        <a href="javascript:void(0);" class="subdrop active"
+                                        <a href="javascript:void(0);" class=""
                                             ><i class="ti ti-layout-grid fs-16 me-2"></i><span>Dashboard</span
                                             ><span class="menu-arrow"></span
                                         ></a>
                                         <ul>
-                                            <li><a href="{% url 'dashboard:index' %}" class="active">Admin Dashboard</a></li>
+                                            <li><a href="{% url 'dashboard:index' %}" class="">Admin Dashboard</a></li>
                                             <li><a href="{% url 'dashboard:admin-dashboard' %}" class="">Admin Dashboard 2</a></li>
                                             <li><a href="{% url 'dashboard:sales-dashboard' %}" class="">Sales Dashboard</a></li>
                                         </ul>
@@ -692,8 +687,8 @@
                                                 <a href="purchase-transaction.html" class="">Purchase Transaction</a>
                                             </li>
                                         </ul>
-                                    </li> {% endcomment %}
-                                    {% comment %} <li class="submenu">
+                                    </li>
+                                    <li class="submenu">
                                         <a href="javascript:void(0);" class="">
                                             <i class="ti ti-brand-apple-arcade fs-16 me-2"></i>
                                             <span>Application</span>
@@ -735,10 +730,10 @@
                                                 </ul>
                                             </li>
                                             <li><a href="social-feed.html" class="">Social Feed</a></li>
-                                            <li><a href="search-list.html" class="">Search List</a></li> {% endcomment %}
-                                        {% comment %} </ul> {% endcomment %}
-                                    {% comment %} </li> {% endcomment %}
-                                    {% comment %} <li class="submenu">
+                                            <li><a href="search-list.html" class="">Search List</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu">
                                         <a href="javascript:void(0);" class="">
                                             <i class="ti ti-layout-sidebar-right-collapse fs-16 me-2"></i>
                                             <span>Layouts</span>
@@ -789,7 +784,7 @@
                                             ><span>Sub Category</span></a
                                         >
                                     </li>
-                                    <li class="">
+                                    <li class="active">
                                         <a href="{% url 'inventory:brand-list' %}"
                                             ><i class="ti ti-triangles fs-16 me-2"></i><span>Brands</span></a
                                         >
@@ -799,8 +794,7 @@
                                             ><i class="ti ti-brand-unity fs-16 me-2"></i><span>Units</span></a
                                         >
                                     </li>
-                                    {% comment %}
-                                    <li class="">
+                                    {% comment %} <li class="">
                                         <a href="varriant-attributes.html"
                                             ><i class="ti ti-checklist fs-16 me-2"></i
                                             ><span>Variant Attributes</span></a
@@ -1729,16 +1723,16 @@
                                 ></a>
                                 <ul>
                                     <li class="submenu">
-                                        <a href="javascript:void(0);" class="active subdrop"
+                                        <a href="javascript:void(0);" class=""
                                             ><span>Dashboard</span> <span class="menu-arrow"></span
                                         ></a>
                                         <ul>
-                                            <li><a href="{% url 'dashboard:index' %}" class="active">Admin Dashboard</a></li>
+                                            <li><a href="{% url 'dashboard:index' %}" class="">Admin Dashboard</a></li>
                                             <li><a href="{% url 'dashboard:admin-dashboard' %}" class="">Admin Dashboard 2</a></li>
                                             <li><a href="{% url 'dashboard:sales-dashboard' %}" class="">Sales Dashboard</a></li>
                                         </ul>
                                     </li>
-                                    <li class="submenu">
+                                    {% comment %} <li class="submenu">
                                         <a href="javascript:void(0);" class=""
                                             ><span>Super Admin</span><span class="menu-arrow"></span
                                         ></a>
@@ -1807,11 +1801,11 @@
                                             <li><a href="layout-rtl.html" class="">RTL</a></li>
                                             <li><a href="layout-dark.html" class="">Dark</a></li>
                                         </ul>
-                                    </li>
+                                    </li> {% endcomment %}
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class=""
+                                <a href="javascript:void(0);" class="active subdrop"
                                     ><i class="ti ti-brand-unity fs-16 me-2"></i><span> Inventory </span>
                                     <span class="menu-arrow"></span
                                 ></a>
@@ -1835,12 +1829,12 @@
                                         <a href="{% url 'inventory:sub-categories' %}" class=""><span>Sub Category</span></a>
                                     </li>
                                     <li>
-                                        <a href="{% url 'inventory:brand-list' %}" class=""><span>Brands</span></a>
+                                        <a href="{% url 'inventory:brand-list' %}" class="active"><span>Brands</span></a>
                                     </li>
                                     <li>
                                         <a href="{% url 'inventory:units' %}" class=""><span>Units</span></a>
                                     </li>
-                                    <li>
+                                    {% comment %} <li>
                                         <a href="varriant-attributes.html" class=""><span>Variant Attributes</span></a>
                                     </li>
                                     <li>
@@ -1851,7 +1845,7 @@
                                     </li>
                                     <li>
                                         <a href="qrcode.html" class=""><span>Print QR Code</span></a>
-                                    </li>
+                                    </li> {% endcomment %}
                                 </ul>
                             </li>
                             <li class="submenu">
@@ -2660,7 +2654,7 @@
                             >
                                 <a
                                     href="#"
-                                    class="nav-link active"
+                                    class="nav-link"
                                     title="Dashboard"
                                     data-bs-toggle="tab"
                                     data-bs-target="#dashboard"
@@ -2696,7 +2690,7 @@
                                 </a>
                                 <a
                                     href="#"
-                                    class="nav-link"
+                                    class="nav-link active"
                                     title="Inventory"
                                     data-bs-toggle="tab"
                                     data-bs-target="#inventory"
@@ -2790,15 +2784,15 @@
                                 <p class="fs-12 mb-0">System Admin</p>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="dashboard">
+                                <div class="tab-pane fade" id="dashboard">
                                     <ul>
                                         <li class="menu-title"><span>MAIN</span></li>
-                                        <li><a href="{% url 'dashboard:index' %}" class="active">Admin Dashboard</a></li>
+                                        <li><a href="{% url 'dashboard:index' %}" class="">Admin Dashboard</a></li>
                                         <li><a href="{% url 'dashboard:admin-dashboard' %}" class="">Admin Dashboard 2</a></li>
                                         <li><a href="{% url 'dashboard:sales-dashboard' %}" class="">Sales Dashboard</a></li>
                                     </ul>
                                 </div>
-                                <div class="tab-pane fade" id="super-admin">
+                                {% comment %} <div class="tab-pane fade" id="super-admin">
                                     <ul>
                                         <li class="menu-title"><span>SUPER ADMIN</span></li>
                                         <li><a href="dashboard.html" class="">Dashboard</a></li>
@@ -2858,8 +2852,8 @@
                                         <li><a href="layout-rtl.html" class="">RTL</a></li>
                                         <li><a href="layout-dark.html" class="">Dark</a></li>
                                     </ul>
-                                </div>
-                                <div class="tab-pane fade" id="inventory">
+                                </div> {% endcomment %}
+                                <div class="tab-pane fade show active" id="inventory">
                                     <ul>
                                         <li class="menu-title"><span>Inventory</span></li>
                                         <li>
@@ -2881,12 +2875,12 @@
                                             <a href="{% url 'inventory:sub-categories' %}" class=""><span>Sub Category</span></a>
                                         </li>
                                         <li>
-                                            <a href="{% url 'inventory:brand-list' %}" class=""><span>Brands</span></a>
+                                            <a href="{% url 'inventory:brand-list' %}" class="active"><span>Brands</span></a>
                                         </li>
                                         <li>
                                             <a href="{% url 'inventory:units' %}" class=""><span>Units</span></a>
                                         </li>
-                                        <li>
+                                        {% comment %} <li>
                                             <a href="varriant-attributes.html" class=""
                                                 ><span>Variant Attributes</span></a
                                             >
@@ -2899,7 +2893,7 @@
                                         </li>
                                         <li>
                                             <a href="qrcode.html" class=""><span>Print QR Code</span></a>
-                                        </li>
+                                        </li> {% endcomment %}
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="stock">
@@ -3674,287 +3668,98 @@
             <div class="page-wrapper">
                 <!-- Start Content -->
                 <div class="content">
-                    <div class="row">
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="card dash-widget w-100">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="dash-widgetimg">
-                                        <span><img src="django/static/assets/img/icons/dash1.svg" alt="img" /></span>
-                                    </div>
-                                    <div class="dash-widgetcontent">
-                                        <h5 class="mb-1">
-                                            $<span class="counters" data-count="307144.00">$307,144.00</span>
-                                        </h5>
-                                        <p class="mb-0">Total Purchase Due</p>
-                                    </div>
-                                </div>
+                    <div class="page-header">
+                        <div class="add-item d-flex">
+                            <div class="page-title">
+                                <h4 class="fw-bold">Brand</h4>
+                                <h6>Manage your brands</h6>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="card dash-widget dash1 w-100">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="dash-widgetimg">
-                                        <span><img src="django/static/assets/img/icons/dash2.svg" alt="img" /></span>
-                                    </div>
-                                    <div class="dash-widgetcontent">
-                                        <h5 class="mb-1">
-                                            $<span class="counters" data-count="4385.00">$4,385.00</span>
-                                        </h5>
-                                        <p class="mb-0">Total Sales Due</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="card dash-widget dash2 w-100">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="dash-widgetimg">
-                                        <span><img src="django/static/assets/img/icons/dash3.svg" alt="img" /></span>
-                                    </div>
-                                    <div class="dash-widgetcontent">
-                                        <h5 class="mb-1">
-                                            $<span class="counters" data-count="385656.50">$385,656.50</span>
-                                        </h5>
-                                        <p class="mb-0">Total Sale Amount</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="card dash-widget dash3 w-100">
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="dash-widgetimg">
-                                        <span><img src="django/static/assets/img/icons/dash4.svg" alt="img" /></span>
-                                    </div>
-                                    <div class="dash-widgetcontent">
-                                        <h5 class="mb-1">
-                                            $<span class="counters" data-count="40000.00">$400.00</span>
-                                        </h5>
-                                        <p class="mb-0">Total Expense Amount</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="dash-count bg-primary">
-                                <div class="dash-counts">
-                                    <h4 class="mb-1">100</h4>
-                                    <p class="text-white mb-0">Customers</p>
-                                </div>
-                                <div class="dash-imgs">
-                                    <i data-feather="user"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="dash-count das1 bg-cyan-900">
-                                <div class="dash-counts">
-                                    <h4 class="mb-1">110</h4>
-                                    <p class="text-white mb-0">Suppliers</p>
-                                </div>
-                                <div class="dash-imgs">
-                                    <i data-feather="user-check"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="dash-count das2 bg-dark">
-                                <div class="dash-counts">
-                                    <h4 class="mb-1">150</h4>
-                                    <p class="text-white mb-0">Purchase Invoice</p>
-                                </div>
-                                <div class="dash-imgs">
-                                    <img
-                                        src="django/static/assets/img/icons/file-text-icon-01.svg"
-                                        class="img-fluid"
-                                        alt="icon"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                            <div class="dash-count das3 bg-success">
-                                <div class="dash-counts">
-                                    <h4 class="mb-1">170</h4>
-                                    <p class="text-white mb-0">Sales Invoice</p>
-                                </div>
-                                <div class="dash-imgs">
-                                    <i data-feather="file"></i>
-                                </div>
-                            </div>
+                        <ul class="table-top-head">
+                            <li>
+                                <a data-bs-toggle="tooltip" data-bs-placement="top" title="Pdf"
+                                    ><img src="django/static/assets/img/icons/pdf.svg" alt="img"
+                                /></a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tooltip" data-bs-placement="top" title="Excel"
+                                    ><img src="django/static/assets/img/icons/excel.svg" alt="img"
+                                /></a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"
+                                    ><i class="ti ti-refresh"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Collapse"
+                                    id="collapse-header"
+                                    ><i class="ti ti-chevron-up"></i
+                                ></a>
+                            </li>
+                        </ul>
+                        <div class="page-btn">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-brand"
+                                ><i class="ti ti-circle-plus me-1"></i>Add Brand</a
+                            >
                         </div>
                     </div>
-                    <!-- Button trigger modal -->
-
-                    <div class="row">
-                        <div class="col-xl-7 col-sm-12 col-12 d-flex">
-                            <div class="card flex-fill">
-                                <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title mb-0">Purchase & Sales</h5>
-                                    <div class="graph-sets">
-                                        <ul class="mb-0">
-                                            <li>
-                                                <span>Sales</span>
-                                            </li>
-                                            <li>
-                                                <span>Purchase</span>
-                                            </li>
-                                        </ul>
-                                        <div class="dropdown">
-                                            <a
-                                                href="javascript:void(0);"
-                                                class="dropdown-toggle btn btn-sm btn-white"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false"
-                                            >
-                                                2025
-                                            </a>
-                                            <ul class="dropdown-menu p-3">
-                                                <li>
-                                                    <a href="javascript:void(0);" class="dropdown-item">2025</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" class="dropdown-item">2022</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" class="dropdown-item">2021</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body pb-0">
-                                    <div id="sales_charts"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Recent Products -->
-                        <div class="col-xl-5 col-sm-12 col-12 d-flex">
-                            <div class="card flex-fill default-cover mb-4">
-                                <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h4 class="card-title mb-0">Recently Added Products</h4>
-                                    <a href="{% url 'inventory:product-list' %}" class="fs-13 fw-medium text-decoration-underline"
-                                        >View All</a
-                                    >
-                                </div>
-                                <div class="card-body p-0">
-                                    <div class="table-responsive dataview">
-                                        <table class="table dashboard-recent-products">
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Products</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <a href="{% url 'inventory:product-list' %}" class="avatar avatar-lg me-3">
-                                                                <img
-                                                                    src="django/static/assets/img/products/stock-img-01.png"
-                                                                    alt="img"
-                                                                />
-                                                            </a>
-                                                            <div>
-                                                                <h6>
-                                                                    <a href="{% url 'inventory:product-list' %}" class="fw-bold"
-                                                                        >Lenevo 3rd Generation</a
-                                                                    >
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>$12500</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <a href="{% url 'inventory:product-list' %}" class="avatar avatar-lg me-3">
-                                                                <img
-                                                                    src="django/static/assets/img/products/stock-img-06.png"
-                                                                    alt="img"
-                                                                />
-                                                            </a>
-                                                            <div>
-                                                                <h6>
-                                                                    <a href="{% url 'inventory:product-list' %}" class="fw-bold"
-                                                                        >Bold V3.2</a
-                                                                    >
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>$1600</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <a href="{% url 'inventory:product-list' %}" class="avatar avatar-lg me-3">
-                                                                <img
-                                                                    src="django/static/assets/img/products/stock-img-02.png"
-                                                                    alt="img"
-                                                                />
-                                                            </a>
-                                                            <div>
-                                                                <h6>
-                                                                    <a href="{% url 'inventory:product-list' %}" class="fw-bold"
-                                                                        >Nike Jordan</a
-                                                                    >
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>$2000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <a href="{% url 'inventory:product-list' %}" class="avatar avatar-lg me-3">
-                                                                <img
-                                                                    src="django/static/assets/img/products/stock-img-03.png"
-                                                                    alt="img"
-                                                                />
-                                                            </a>
-                                                            <div>
-                                                                <h6>
-                                                                    <a href="{% url 'inventory:product-list' %}" class="fw-bold"
-                                                                        >Apple Series 5 Watch</a
-                                                                    >
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>$800</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Recent Products -->
-                    </div>
-
-                    <!-- Expired Products -->
+                    <!-- /product list -->
                     <div class="card">
-                        <div class="card-header d-flex justify-content-between align-items-center">
-                            <h4 class="card-title">Expired Products</h4>
-                            <div class="view-all-link">
-                                <a href="{% url 'inventory:expired-products' %}" class="fs-13 fw-medium text-decoration-underline"
-                                    >View All</a
-                                >
+                        <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                            <div class="search-set">
+                                <div class="search-input">
+                                    <span class="btn-searchset"><i class="ti ti-search fs-14 feather-search"></i></span>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex table-dropdown my-xl-auto right-content align-items-center flex-wrap row-gap-3"
+                            >
+                                <div class="dropdown me-2">
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="dropdown-toggle btn btn-white btn-md d-inline-flex align-items-center"
+                                        data-bs-toggle="dropdown"
+                                    >
+                                        Status
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end p-3">
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Active</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Inactive</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="dropdown-toggle btn btn-white btn-md d-inline-flex align-items-center"
+                                        data-bs-toggle="dropdown"
+                                    >
+                                        Sort By : Latest
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end p-3">
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Latest</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body p-0">
-                            <div class="table-responsive dataview">
-                                <table class="table dashboard-expired-products">
+                            <div class="table-responsive">
+                                <table class="table datatable">
                                     <thead class="thead-light">
                                         <tr>
                                             <th class="no-sort">
@@ -3963,11 +3768,10 @@
                                                     <span class="checkmarks"></span>
                                                 </label>
                                             </th>
-                                            <th>Product</th>
-                                            <th>SKU</th>
-                                            <th>Manufactured Date</th>
-                                            <th>Expired Date</th>
-                                            <th class="no-sort">Action</th>
+                                            <th>Brand</th>
+                                            <th>Created Date</th>
+                                            <th>Status</th>
+                                            <th class="no-sort"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -3980,187 +3784,462 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <a href="javascript:void(0);" class="avatar avatar-lg me-2">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
                                                         <img
-                                                            src="django/static/assets/img/products/expire-product-01.png"
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/lenova.png"
                                                             alt="img"
                                                         />
                                                     </a>
-                                                    <div>
-                                                        <h6>
-                                                            <a href="javascript:void(0);" class="fw-bold"
-                                                                >Red Premium Handy</a
-                                                            >
-                                                        </h6>
-                                                    </div>
+                                                    <a href="javascript:void(0);">Lenovo</a>
                                                 </div>
                                             </td>
-                                            <td>PT006</td>
-                                            <td>17 Jan 2023</td>
-                                            <td>29 Mar 2023</td>
-                                            <td class="action-table-data">
-                                                <div class="edit-delete-action">
-                                                    <a class="me-2 p-2" href="#">
-                                                        <i data-feather="edit" class="feather-edit"></i>
-                                                    </a>
-                                                    <a class="p-2" href="javascript:void(0);">
-                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                            <td>24 Dec 2024</td>
                                             <td>
-                                                <label class="checkboxs">
-                                                    <input type="checkbox" />
-                                                    <span class="checkmarks"></span>
-                                                </label>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
                                             </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="javascript:void(0);" class="avatar avatar-lg me-2">
-                                                        <img
-                                                            src="django/static/assets/img/products/expire-product-02.png"
-                                                            alt="img"
-                                                        />
-                                                    </a>
-                                                    <div>
-                                                        <h6>
-                                                            <a href="javascript:void(0);" class="fw-bold"
-                                                                >Iphone 14 Pro</a
-                                                            >
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>PT007</td>
-                                            <td>22 Feb 2023</td>
-                                            <td>04 Apr 2023</td>
-                                            <td class="action-table-data">
-                                                <div class="edit-delete-action">
-                                                    <a class="me-2 p-2" href="#">
-                                                        <i data-feather="edit" class="feather-edit"></i>
-                                                    </a>
-                                                    <a class="p-2" href="javascript:void(0);">
-                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label class="checkboxs">
-                                                    <input type="checkbox" />
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="javascript:void(0);" class="avatar avatar-lg me-2">
-                                                        <img
-                                                            src="django/static/assets/img/products/expire-product-03.png"
-                                                            alt="img"
-                                                        />
-                                                    </a>
-                                                    <div>
-                                                        <h6>
-                                                            <a href="javascript:void(0);" class="fw-bold"
-                                                                >Black Slim 200</a
-                                                            >
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>PT008</td>
-                                            <td>18 Mar 2023</td>
-                                            <td>13 May 2023</td>
-                                            <td class="action-table-data">
-                                                <div class="edit-delete-action">
-                                                    <a class="me-2 p-2" href="#">
-                                                        <i data-feather="edit" class="feather-edit"></i>
-                                                    </a>
-                                                    <a class="p-2" href="javascript:void(0);">
-                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label class="checkboxs">
-                                                    <input type="checkbox" />
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="javascript:void(0);" class="avatar avatar-lg me-2">
-                                                        <img
-                                                            src="django/static/assets/img/products/expire-product-04.png"
-                                                            alt="img"
-                                                        />
-                                                    </a>
-                                                    <div>
-                                                        <h6>
-                                                            <a href="javascript:void(0);" class="fw-bold"
-                                                                >Woodcraft Sandal</a
-                                                            >
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>PT009</td>
-                                            <td>29 Mar 2023</td>
-                                            <td>27 May 2023</td>
-                                            <td class="action-table-data">
-                                                <div class="edit-delete-action">
-                                                    <a class="me-2 p-2" href="#">
-                                                        <i data-feather="edit" class="feather-edit"></i>
-                                                    </a>
-                                                    <a class="p-2" href="javascript:void(0);">
-                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label class="checkboxs">
-                                                    <input type="checkbox" />
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="javascript:void(0);" class="avatar avatar-lg me-2">
-                                                        <img
-                                                            src="django/static/assets/img/products/stock-img-03.png"
-                                                            alt="img"
-                                                        />
-                                                    </a>
-                                                    <div>
-                                                        <h6>
-                                                            <a href="javascript:void(0);" class="fw-bold"
-                                                                >Apple Series 5 Watch</a
-                                                            >
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>PT010</td>
-                                            <td>24 Mar 2023</td>
-                                            <td>26 May 2023</td>
                                             <td class="action-table-data">
                                                 <div class="edit-delete-action">
                                                     <a
                                                         class="me-2 p-2"
                                                         href="#"
                                                         data-bs-toggle="modal"
-                                                        data-bs-target="#edit-units"
+                                                        data-bs-target="#edit-brand"
                                                     >
                                                         <i data-feather="edit" class="feather-edit"></i>
                                                     </a>
-                                                    <a class="p-2" href="javascript:void(0);">
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/beats.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Beats</a>
+                                                </div>
+                                            </td>
+                                            <td>10 Dec 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/nike.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Nike</a>
+                                                </div>
+                                            </td>
+                                            <td>27 Nov 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/apple.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Apple</a>
+                                                </div>
+                                            </td>
+                                            <td>18 Nov 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/amazon.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Amazon</a>
+                                                </div>
+                                            </td>
+                                            <td>06 Nov 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/woodmart.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Woodmart</a>
+                                                </div>
+                                            </td>
+                                            <td>25 Oct 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/dior.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Dior</a>
+                                                </div>
+                                            </td>
+                                            <td>14 Oct 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/lava.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Lava</a>
+                                                </div>
+                                            </td>
+                                            <td>03 Oct 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/nilkamal.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">Nilkamal</a>
+                                                </div>
+                                            </td>
+                                            <td>20 Sep 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <i data-feather="trash-2" class="feather-trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkboxs">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmarks"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="avatar avatar-md bg-light-900 p-1 me-2"
+                                                    >
+                                                        <img
+                                                            class="object-fit-contain"
+                                                            src="django/static/assets/img/brand/the-north-force.png"
+                                                            alt="img"
+                                                        />
+                                                    </a>
+                                                    <a href="javascript:void(0);">The North Face</a>
+                                                </div>
+                                            </td>
+                                            <td>10 Sep 2024</td>
+                                            <td>
+                                                <span class="badge table-badge bg-success fw-medium fs-10">Active</span>
+                                            </td>
+                                            <td class="action-table-data">
+                                                <div class="edit-delete-action">
+                                                    <a
+                                                        class="me-2 p-2"
+                                                        href="#"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#edit-brand"
+                                                    >
+                                                        <i data-feather="edit" class="feather-edit"></i>
+                                                    </a>
+                                                    <a
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#delete-modal"
+                                                        class="p-2"
+                                                        href="javascript:void(0);"
+                                                    >
                                                         <i data-feather="trash-2" class="feather-trash-2"></i>
                                                     </a>
                                                 </div>
@@ -4171,7 +4250,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /Expired Products -->
+                    <!-- /product list -->
                 </div>
                 <!-- End Content -->
 
@@ -4181,7 +4260,7 @@
                 >
                     <p class="fs-13 text-gray-9 mb-0">
                         2014 -
-                        <script type="547bc1a52ba2ea0006698f97-text/javascript">
+                        <script type="4b50205babc33050fde1b6be-text/javascript">
                             document.write(new Date().getFullYear())
                         </script>
                         &copy; DreamsPOS. All Right Reserved
@@ -4196,6 +4275,151 @@
     ========================= -->
         </div>
         <!-- End Main Wrapper -->
+
+        <!-- Add Brand -->
+        <div class="modal fade" id="add-brand">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="page-title">
+                            <h4>Add Brand</h4>
+                        </div>
+                        <button
+                            type="button"
+                            class="close bg-danger text-white fs-16"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="https://django.dreamstechnologies.com/dreamspos/retail-pos/brand-list">
+                        <div class="modal-body new-employee-field">
+                            <div class="profile-pic-upload mb-3">
+                                <div class="profile-pic brand-pic">
+                                    <span><i data-feather="plus-circle" class="plus-down-add"></i> Add Image</span>
+                                </div>
+                                <div>
+                                    <div class="image-upload mb-0">
+                                        <input type="file" />
+                                        <div class="image-uploads">
+                                            <h4>Upload Image</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mt-2">JPEG, PNG up to 2 MB</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Brand<span class="text-danger ms-1">*</span></label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="mb-0">
+                                <div
+                                    class="status-toggle modal-status d-flex justify-content-between align-items-center"
+                                >
+                                    <span class="status-label">Status</span>
+                                    <input type="checkbox" id="user2" class="check" checked="" />
+                                    <label for="user2" class="checktoggle"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn me-2 btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Add Brand</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /Add Brand -->
+
+        <!-- Edit Brand -->
+        <div class="modal fade" id="edit-brand">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="page-title">
+                            <h4>Edit Brand</h4>
+                        </div>
+                        <button
+                            type="button"
+                            class="close bg-danger text-white fs-16"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="https://django.dreamstechnologies.com/dreamspos/retail-pos/brand-list">
+                        <div class="modal-body new-employee-field">
+                            <div class="profile-pic-upload mb-3">
+                                <div class="profile-pic brand-pic">
+                                    <span
+                                        ><img src="django/static/assets/img/brand/brand-icon-02.png" alt="Img"
+                                    /></span>
+                                    <a href="javascript:void(0);" class="remove-photo"
+                                        ><i data-feather="x" class="x-square-add"></i
+                                    ></a>
+                                </div>
+                                <div>
+                                    <div class="image-upload mb-0">
+                                        <input type="file" />
+                                        <div class="image-uploads">
+                                            <h4>Change Image</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mt-2">JPEG, PNG up to 2 MB</p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Brand<span class="text-danger ms-1">*</span></label>
+                                <input type="text" class="form-control" value="Lenovo" />
+                            </div>
+                            <div class="mb-0">
+                                <div
+                                    class="status-toggle modal-status d-flex justify-content-between align-items-center"
+                                >
+                                    <span class="status-label">Status</span>
+                                    <input type="checkbox" id="user4" class="check" checked="" />
+                                    <label for="user4" class="checktoggle"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn me-2 btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Brand -->
+
+        <!-- Delete -->
+        <div class="modal fade modal-default" id="delete-modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="success-wrap text-center">
+                            <form action="https://django.dreamstechnologies.com/dreamspos/retail-pos/brand-list">
+                                <div class="icon-success bg-danger-transparent text-danger mb-2">
+                                    <i class="ti ti-trash"></i>
+                                </div>
+                                <h3 class="mb-2">Delete Brand</h3>
+                                <p class="fs-16 mb-3">Are you sure you want to delete brand?</p>
+                                <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap">
+                                    <button type="button" class="btn btn-md btn-secondary" data-bs-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="submit" class="btn btn-md btn-primary">Yes, Delete</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Delete -->
 
         <!-- Payment Completed -->
         <div class="modal fade modal-default" id="payment-completed" aria-labelledby="payment-completed">
@@ -7508,35 +7732,35 @@
                                     <button
                                         class="btn btn-clear"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; clr()"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         C
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('7')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         7
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('4')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         4
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('1')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         1
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis(',')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         ,
                                     </button>
@@ -7545,35 +7769,35 @@
                                     <button
                                         class="btn btn-expression"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('https://django.dreamstechnologies.com/')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         ÷
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('8')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         8
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('5')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         5
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('2')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         2
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('00')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         00
                                     </button>
@@ -7582,35 +7806,35 @@
                                     <button
                                         class="btn btn-expression"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('%')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         %
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('9')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         9
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('6')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         6
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('3')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         3
                                     </button>
                                     <button
                                         class="btn btn-number"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('.')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         .
                                     </button>
@@ -7619,35 +7843,35 @@
                                     <button
                                         class="btn btn-clear"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; back()"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         <i class="ti ti-backspace"></i>
                                     </button>
                                     <button
                                         class="btn btn-expression"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('*')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         x
                                     </button>
                                     <button
                                         class="btn btn-expression"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('-')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         -
                                     </button>
                                     <button
                                         class="btn btn-expression"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; dis('+')"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         +
                                     </button>
                                     <button
                                         class="btn btn-clear"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; solve()"
-                                        data-cf-modified-547bc1a52ba2ea0006698f97-=""
+                                        data-cf-modified-4b50205babc33050fde1b6be-=""
                                     >
                                         =
                                     </button>
@@ -7942,32 +8166,7 @@
 
         <script src="{% static 'js/plugins/quill/quill.min.js' %}"></script>
 
-        <!-- Chart JS -->
-        <!-- <script
-            src="django/static/assets/plugins/chartjs/chart.min.js"
-            type="d811708b760669d46b5d49cd-text/javascript"
-        ></script> -->
-        <script src="{% static 'js/plugins/chartjs/chart.min.js' %}"></script>
-
-        <!-- <script
-            src="django/static/assets/plugins/chartjs/chart-data.js"
-            type="d811708b760669d46b5d49cd-text/javascript"
-        ></script> -->
-        <script src="{% static 'js/plugins/chartjs/chart-data.js' %}"></script>
-
-        <!-- Chart Apex JS -->
-        <!-- <script
-            src="django/static/assets/plugins/apexchart/apexcharts.min.js"
-            type="d811708b760669d46b5d49cd-text/javascript"
-        ></script> -->
-        <script src="{% static 'js/plugins/apexchart/apexcharts.min.js' %}"></script>
-
-        <!-- <script
-            src="django/static/assets/plugins/apexchart/chart-data.js"
-            type="d811708b760669d46b5d49cd-text/javascript"
-        ></script> -->
-         <script src="{% static 'js/plugins/apexchart/chart-data.js' %}"></script>
-
+      
         <!-- Select2 JS -->
         <!-- <script
             src="django/static/assets/plugins/select2/js/select2.min.js"
@@ -7975,16 +8174,9 @@
         ></script> -->
          <script src="{% static 'js/plugins/select2/select2.min.js' %}"></script>
 
-        <!-- Daterangepicker JS -->
-        <!-- <script
-            src="django/static/assets/plugins/daterangepicker/daterangepicker.js"
-            type="d811708b760669d46b5d49cd-text/javascript"
-        ></script> -->
-         <script src="{% static 'js/plugins/daterangepicker/daterangepicker.js' %}"></script>
-
         <!-- <script src="django/static/assets/js/script.js" type="d811708b760669d46b5d49cd-text/javascript"></script> -->
          <script src="{% static 'js/script.js' %}"></script>
-       
+
         <div class="sidebar-contact">
             <div class="toggle-theme" data-bs-toggle="offcanvas" data-bs-target="#theme-setting">
                 <i class="fa fa-cog fa-w-16 fa-spin"></i>
@@ -8562,10 +8754,10 @@
 
         <script
             src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-            data-cf-settings="547bc1a52ba2ea0006698f97-|49"
+            data-cf-settings="4b50205babc33050fde1b6be-|49"
             defer
         ></script>
     </body>
 
-    <!-- Mirrored from django.dreamstechnologies.com/dreamspos/retail-pos/admin-dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jun 2026 11:02:42 GMT -->
+    <!-- Mirrored from django.dreamstechnologies.com/dreamspos/retail-pos/brand-list by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jun 2026 11:04:11 GMT -->
 </html>

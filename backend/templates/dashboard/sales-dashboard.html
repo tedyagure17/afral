@@ -33,6 +33,7 @@
 
         <!-- Apple Touch Icon -->
         <link rel="apple-touch-icon" sizes="180x180" href="django/static/assets/img/apple-touch-icon.png" />
+        
         <!-- Bootstrap CSS -->
         {% comment %} <link rel="stylesheet" href="django/static/assets/css/bootstrap.min.css" /> {% endcomment %}
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -763,7 +764,8 @@
                                 <h6 class="submenu-hdr">Inventory</h6>
                                 <ul>
                                     <li class="">
-                                        <a href="product-list.html"><i data-feather="box"></i><span>Products</span></a>
+                                        {% comment %} <a href="product-list.html"><i data-feather="box"></i><span>Products</span></a> {% endcomment %}
+                                        <a href="{% url 'inventory:product-list' %}"><i data-feather="box"></i><span>Products</span></a>
                                     </li>
                                     <li class="">
                                         <a href="add-product.html"
@@ -797,11 +799,12 @@
                                             ><i class="ti ti-triangles fs-16 me-2"></i><span>Brands</span></a
                                         >
                                     </li>
-                                    {% comment %} <li class="">
+                                    <li class="">
                                         <a href="units.html"
                                             ><i class="ti ti-brand-unity fs-16 me-2"></i><span>Units</span></a
                                         >
                                     </li>
+                                    {% comment %} 
                                     <li class="">
                                         <a href="varriant-attributes.html"
                                             ><i class="ti ti-checklist fs-16 me-2"></i

@@ -4,7 +4,8 @@
 
 <html lang="en">
     <!-- Theme Script JS -->
-    <script src="django/static/assets/js/theme-script.js" type="d811708b760669d46b5d49cd-text/javascript"></script>
+    {% comment %} <script src="django/static/assets/js/theme-script.js" type="d811708b760669d46b5d49cd-text/javascript"></script> {% endcomment %}
+    <script src="{% static 'js/theme-script.js' %}"></script>
 
     <meta
         http-equiv="content-type"
@@ -268,7 +269,7 @@
                             <div class="dropdown-menu dropdown-xl dropdown-menu-center">
                                 <div class="row g-2">
                                     <div class="col-md-2">
-                                        <a href="category-list.html" class="link-item">
+                                        <a href="{% url 'inventory:category-list' %}" class="link-item">
                                             <span class="link-icon">
                                                 <i class="ti ti-brand-codepen"></i>
                                             </span>
@@ -276,7 +277,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-2">
-                                        <a href="add-product.html" class="link-item">
+                                        <a href="{% url 'inventory:add-product' %}" class="link-item">
                                             <span class="link-icon">
                                                 <i class="ti ti-square-plus"></i>
                                             </span>
@@ -284,7 +285,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-2">
-                                        <a href="category-list.html" class="link-item">
+                                        <a href="{% url 'inventory:category-list' %}" class="link-item">
                                             <span class="link-icon">
                                                 <i class="ti ti-shopping-bag"></i>
                                             </span>
@@ -762,45 +763,46 @@
                                 <h6 class="submenu-hdr">Inventory</h6>
                                 <ul>
                                     <li class="">
-                                        <a href="product-list.html"><i data-feather="box"></i><span>Products</span></a>
+                                        <a href="{% url 'inventory:product-list' %}"><i data-feather="box"></i><span>Products</span></a>
                                     </li>
                                     <li class="">
-                                        <a href="add-product.html"
+                                        <a href="{% url 'inventory:add-product' %}"
                                             ><i class="ti ti-table-plus fs-16 me-2"></i><span>Create Product</span></a
                                         >
                                     </li>
                                     <li class="">
-                                        <a href="expired-products.html"
+                                        <a href="{% url 'inventory:expired-products' %}"
                                             ><i class="ti ti-progress-alert fs-16 me-2"></i
                                             ><span>Expired Products</span></a
                                         >
                                     </li>
                                     <li class="">
-                                        <a href="low-stocks.html"
+                                        <a href="{% url 'inventory:low-stocks' %}"
                                             ><i class="ti ti-trending-up-2 fs-16 me-2"></i><span>Low Stocks</span></a
                                         >
                                     </li>
                                     <li class="">
-                                        <a href="category-list.html"
+                                        <a href="{% url 'inventory:category-list' %}"
                                             ><i class="ti ti-list-details fs-16 me-2"></i><span>Category</span></a
                                         >
                                     </li>
                                     <li class="">
-                                        <a href="sub-categories.html"
+                                        <a href="{% url 'inventory:sub-categories' %}"
                                             ><i class="ti ti-carousel-vertical fs-16 me-2"></i
                                             ><span>Sub Category</span></a
                                         >
                                     </li>
                                     <li class="">
-                                        <a href="brand-list.html"
+                                        <a href="{% url 'inventory:brand-list' %}"
                                             ><i class="ti ti-triangles fs-16 me-2"></i><span>Brands</span></a
                                         >
                                     </li>
-                                    {% comment %} <li class="">
-                                        <a href="units.html"
+                                     <li class="">
+                                        <a href="{% url 'inventory:units' %}"
                                             ><i class="ti ti-brand-unity fs-16 me-2"></i><span>Units</span></a
                                         >
                                     </li>
+                                    {% comment %}
                                     <li class="">
                                         <a href="varriant-attributes.html"
                                             ><i class="ti ti-checklist fs-16 me-2"></i
@@ -1818,28 +1820,28 @@
                                 ></a>
                                 <ul>
                                     <li>
-                                        <a href="product-list.html" class=""><span>Products</span></a>
+                                        <a href="{% url 'inventory:product-list' %}" class=""><span>Products</span></a>
                                     </li>
                                     <li>
-                                        <a href="add-product.html" class=""><span>Create Product</span></a>
+                                        <a href="{% url 'inventory:add-product' %}" class=""><span>Create Product</span></a>
                                     </li>
                                     <li>
-                                        <a href="expired-products.html" class=""><span>Expired Products</span></a>
+                                        <a href="{% url 'inventory:expired-products' %}" class=""><span>Expired Products</span></a>
                                     </li>
                                     <li>
-                                        <a href="low-stocks.html" class=""><span>Low Stocks</span></a>
+                                        <a href="{% url 'inventory:low-stocks' %}" class=""><span>Low Stocks</span></a>
                                     </li>
                                     <li>
-                                        <a href="category-list.html" class=""><span>Category</span></a>
+                                        <a href="{% url 'inventory:category-list' %}" class=""><span>Category</span></a>
                                     </li>
                                     <li>
-                                        <a href="sub-categories.html" class=""><span>Sub Category</span></a>
+                                        <a href="{% url 'inventory:sub-categories' %}" class=""><span>Sub Category</span></a>
                                     </li>
                                     <li>
-                                        <a href="brand-list.html" class=""><span>Brands</span></a>
+                                        <a href="{% url 'inventory:brand-list' %}" class=""><span>Brands</span></a>
                                     </li>
                                     <li>
-                                        <a href="units.html" class=""><span>Units</span></a>
+                                        <a href="{% url 'inventory:units' %}" class=""><span>Units</span></a>
                                     </li>
                                     <li>
                                         <a href="varriant-attributes.html" class=""><span>Variant Attributes</span></a>
@@ -2864,28 +2866,28 @@
                                     <ul>
                                         <li class="menu-title"><span>Inventory</span></li>
                                         <li>
-                                            <a href="product-list.html" class=""><span>Products</span></a>
+                                            <a href="{% url 'inventory:product-list' %}" class=""><span>Products</span></a>
                                         </li>
                                         <li>
-                                            <a href="add-product.html" class=""><span>Create Product</span></a>
+                                            <a href="{% url 'inventory:add-product' %}" class=""><span>Create Product</span></a>
                                         </li>
                                         <li>
-                                            <a href="expired-products.html" class=""><span>Expired Products</span></a>
+                                            <a href="{% url 'inventory:expired-products' %}" class=""><span>Expired Products</span></a>
                                         </li>
                                         <li>
-                                            <a href="low-stocks.html" class=""><span>Low Stocks</span></a>
+                                            <a href="{% url 'inventory:low-stocks' %}" class=""><span>Low Stocks</span></a>
                                         </li>
                                         <li>
-                                            <a href="category-list.html" class=""><span>Category</span></a>
+                                            <a href="{% url 'inventory:category-list' %}" class=""><span>Category</span></a>
                                         </li>
                                         <li>
-                                            <a href="sub-categories.html" class=""><span>Sub Category</span></a>
+                                            <a href="{% url 'inventory:sub-categories' %}" class=""><span>Sub Category</span></a>
                                         </li>
                                         <li>
-                                            <a href="brand-list.html" class=""><span>Brands</span></a>
+                                            <a href="{% url 'inventory:brand-list' %}" class=""><span>Brands</span></a>
                                         </li>
                                         <li>
-                                            <a href="units.html" class=""><span>Units</span></a>
+                                            <a href="{% url 'inventory:units' %}" class=""><span>Units</span></a>
                                         </li>
                                         <li>
                                             <a href="varriant-attributes.html" class=""
@@ -4200,7 +4202,7 @@
                                         ></span>
                                         <h5 class="card-title mb-0">Low Stock Products</h5>
                                     </div>
-                                    <a href="low-stocks.html" class="fs-13 fw-medium text-decoration-underline"
+                                    <a href="{% url 'inventory:low-stocks' %}" class="fs-13 fw-medium text-decoration-underline"
                                         >View All</a
                                     >
                                 </div>
