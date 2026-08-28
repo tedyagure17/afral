@@ -23,5 +23,6 @@ urlpatterns = [
      path("", include("apps.dashboard.urls")),
      path("inventory/", include("apps.inventory.urls")),
      path("stocks/", include("apps.stocks.urls")),
+     path("sales/", include("apps.sales.urls")),
 ]
 

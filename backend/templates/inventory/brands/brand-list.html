@@ -285,7 +285,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-2">
-                                        <a href="online-orders.html" class="link-item">
+                                        <a href="{% url 'sales:online-orders'%}" class="link-item">
                                             <span class="link-icon">
                                                 <i class="ti ti-shopping-cart"></i>
                                             </span>
@@ -301,7 +301,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-2">
-                                        <a href="quotation-list.html" class="link-item">
+                                        <a href="{% url 'sales:quotation-list'%}" class="link-item">
                                             <span class="link-icon">
                                                 <i class="ti ti-device-floppy"></i>
                                             </span>
@@ -309,7 +309,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-2">
-                                        <a href="sales-returns.html" class="link-item">
+                                        <a href="{% url 'sales:sales-returns'%}" class="link-item">
                                             <span class="link-icon">
                                                 <i class="ti ti-copy"></i>
                                             </span>
@@ -847,26 +847,26 @@
                                             <span class="menu-arrow"></span>
                                         </a>
                                         <ul>
-                                            <li><a href="online-orders.html" class="">Online Orders</a></li>
-                                            <li><a href="pos-orders.html" class="">POS Orders</a></li>
+                                            <li><a href="{% url 'sales:online-orders'%}" class="">Online Orders</a></li>
+                                            <li><a href="{% url 'sales:pos-orders'%}" class="">POS Orders</a></li>
                                         </ul>
                                     </li>
                                     <li class="">
-                                        <a href="invoice.html"
+                                        <a href="{% url 'sales:invoice'%}"
                                             ><i class="ti ti-file-invoice fs-16 me-2"></i><span>Invoices</span></a
                                         >
                                     </li>
                                     <li class="">
-                                        <a href="sales-returns.html"
+                                        <a href="{% url 'sales:sales-returns'%}"
                                             ><i class="ti ti-receipt-refund fs-16 me-2"></i><span>Sales Return</span></a
                                         >
                                     </li>
                                     <li class="">
-                                        <a href="quotation-list.html"
+                                        <a href="{% url 'sales:quotation-list'%}"
                                             ><i class="ti ti-files fs-16 me-2"></i><span>Quotation</span></a
                                         >
                                     </li>
-                                    <li class="submenu">
+                                    {% comment %} <li class="submenu">
                                         <a href="javascript:void(0);"
                                             ><i class="ti ti-device-laptop fs-16 me-2"></i><span>POS</span
                                             ><span class="menu-arrow"></span
@@ -892,7 +892,7 @@
                                                 >
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> {% endcomment %}
                                 </ul>
                             </li>
                             <li class="submenu-open">
@@ -1882,20 +1882,20 @@
                                                     ><span>Sales</span><span class="menu-arrow"></span
                                                 ></a>
                                                 <ul>
-                                                    <li><a href="online-orders.html" class="">Online Orders</a></li>
-                                                    <li><a href="pos-orders.html" class="">POS Orders</a></li>
+                                                    <li><a href="{% url 'sales:online-orders'%}" class="">Online Orders</a></li>
+                                                    <li><a href="{% url 'sales:pos-orders'%}" class="">POS Orders</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="invoice.html" class=""><span>Invoices</span></a>
+                                                <a href="{% url 'sales:invoice'%}" class=""><span>Invoices</span></a>
                                             </li>
                                             <li>
-                                                <a href="sales-returns.html" class=""><span>Sales Return</span></a>
+                                                <a href="{% url 'sales:sales-returns'%}" class=""><span>Sales Return</span></a>
                                             </li>
                                             <li>
-                                                <a href="quotation-list.html" class=""><span>Quotation</span></a>
+                                                <a href="{% url 'sales:quotation-list'%}" class=""><span>Quotation</span></a>
                                             </li>
-                                            <li class="submenu">
+                                            {% comment %} <li class="submenu">
                                                 <a href="javascript:void(0);" class=""
                                                     ><span>POS</span><span class="menu-arrow"></span
                                                 ></a>
@@ -1920,7 +1920,7 @@
                                                         >
                                                     </li>
                                                 </ul>
-                                            </li>
+                                            </li> {% endcomment %}
                                         </ul>
                                     </li>
                                     <li class="submenu">
@@ -2918,20 +2918,20 @@
                                                 ><span>Sales</span><span class="menu-arrow"></span
                                             ></a>
                                             <ul>
-                                                <li><a href="online-orders.html" class="">Online Orders</a></li>
-                                                <li><a href="pos-orders.html" class="">POS Orders</a></li>
+                                                <li><a href="{% url 'sales:online-orders'%}" class="">Online Orders</a></li>
+                                                <li><a href="{% url 'sales:pos-orders'%}" class="">POS Orders</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="invoice.html" class=""><span>Invoices</span></a>
+                                            <a href="{% url 'sales:invoice'%}" class=""><span>Invoices</span></a>
                                         </li>
                                         <li>
-                                            <a href="sales-returns.html" class=""><span>Sales Return</span></a>
+                                            <a href="{% url 'sales:sales-returns'%}" class=""><span>Sales Return</span></a>
                                         </li>
                                         <li>
-                                            <a href="quotation-list.html" class=""><span>Quotation</span></a>
+                                            <a href="{% url 'sales:quotation-list'%}" class=""><span>Quotation</span></a>
                                         </li>
-                                        <li class="submenu">
+                                        {% comment %} <li class="submenu">
                                             <a href="javascript:void(0);" class="subdrop"
                                                 ><span>POS</span><span class="menu-arrow"></span
                                             ></a>
@@ -2956,7 +2956,7 @@
                                                     >
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> {% endcomment %}
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="finance">
